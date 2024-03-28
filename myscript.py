@@ -14,7 +14,8 @@ class MyStack(Stack):
         instance = ec2.Instance(self, 'MyInstance',
             instance_type=ec2.InstanceType.of(ec2.InstanceClass.BURSTABLE2, ec2.InstanceSize.MICRO),
             machine_image=ec2.AmazonLinuxImage(),
-            vpc=vpc
+            vpc=vpc,
+            availability_zone='us-east-1a'  
         )
 
         # Creating an S3 bucket
