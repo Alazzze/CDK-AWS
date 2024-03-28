@@ -1,3 +1,5 @@
+[![GitHub Actions Status](https://github.com/Alazzze/CDK-AWS/workflows/CI/badge.svg)](https://github.com/Alazzze/CDK-AWS/actions)
+
 <<<<<<< HEAD
 # CDK-AWS
 testing work with CDK/AWS
