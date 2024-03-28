@@ -1,65 +1,56 @@
 [![GitHub Actions Status](https://github.com/Alazzze/CDK-AWS/workflows/CI/badge.svg)](https://github.com/Alazzze/CDK-AWS/actions)
 
-<<<<<<< HEAD
-# CDK-AWS
-testing work with CDK/AWS
-=======
+# AWS CDK Python Project
 
-# Welcome to your CDK Python project!
+This project demonstrates how to use the AWS Cloud Development Kit (CDK) with Python to provision infrastructure on AWS.
 
-This is a blank project for CDK development with Python.
+## Overview
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+This CDK project creates the following AWS resources:
+- A Virtual Private Cloud (VPC) with two availability zones (AZs)
+- An EC2 instance within the VPC
+- An Amazon S3 bucket
 
-This project is set up like a standard Python project.  The initialization
-process also creates a virtualenv within this project, stored under the `.venv`
-directory.  To create the virtualenv it assumes that there is a `python3`
-(or `python` for Windows) executable in your path with access to the `venv`
-package. If for any reason the automatic creation of the virtualenv fails,
-you can create the virtualenv manually.
+## Prerequisites
 
-To manually create a virtualenv on MacOS and Linux:
+Before you begin, ensure you have the following installed:
+- AWS CLI
+- AWS CDK
+- Python (version 3.6 or later)
 
-```
-$ python3 -m venv .venv
-```
+## Getting Started
 
-After the init process completes and the virtualenv is created, you can use the following
-step to activate your virtualenv.
+To deploy this project, follow these steps:
 
-```
-$ source .venv/bin/activate
-```
+1. Clone this repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Install dependencies by running:
+pip install -r requirements.txt
 
-If you are a Windows platform, you would activate the virtualenv like this:
+4. Deploy the stack to your AWS account:
+cdk deploy
 
-```
-% .venv\Scripts\activate.bat
-```
 
-Once the virtualenv is activated, you can install the required dependencies.
+## Usage
 
-```
-$ pip install -r requirements.txt
-```
+After deploying the stack, you can access the resources created in your AWS account:
+- EC2 instance: Connect to the instance using SSH and the public IP address.
+- S3 bucket: Upload and download files using the AWS CLI or AWS Management Console.
 
-At this point you can now synthesize the CloudFormation template for this code.
+## Cleanup
 
-```
-$ cdk synth
-```
+To remove the resources created by this project from your AWS account, run:
+cdk destroy
 
-To add additional dependencies, for example other CDK libraries, just add
-them to your `setup.py` file and rerun the `pip install -r requirements.txt`
-command.
 
-## Useful commands
+## Contributing
 
- * `cdk ls`          list all stacks in the app
- * `cdk synth`       emits the synthesized CloudFormation template
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk docs`        open CDK documentation
+Contributions are welcome! Please fork this repository and submit a pull request with your changes.
 
-Enjoy!
->>>>>>> 815d4b2 (my_commit)
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+
+
